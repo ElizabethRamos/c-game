@@ -86,6 +86,10 @@ int main(int argc, char *argv[])
         }
     }
     while(1);
+    
+    printf("\n\nPressione enter para sair...");
+
+    scanf("%*c");
 
     return 0;
 } 
@@ -219,5 +223,17 @@ int check_winner()
 //funcao que verifica o empate
 int check_draw()
 {
-    return 0;
+    int i, j; 
+
+    for(i = 0; i < 3; i++)
+    {
+        for(j = 0; j < 3; j++)
+        {
+            if(matrix[i][j] == ' ')
+            {
+                return 0;
+            }
+        }
+    }
+    return 1;
 }
