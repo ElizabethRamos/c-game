@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
             //verifica se ha um vencedor 
             if(check_winner() == 1)
             {
-                winner = 'C';
+                winner = 'P';
                 break;
             }
 
@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 
             if(check_winner() == 1)
             {
-                winner = 'P';
+                winner = 'C';
                 break;
             }
 
